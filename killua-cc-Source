@@ -40,6 +40,7 @@ local Notify = AkaliNotif.Notify
 
 local AimingTab = Window:CreateTab("Main")
 local MiscTab = Window:CreateTab("Misc")
+local ComingSoonTab = Window:CreateTab("Coming")
 
 local testSection = MiscTab:CreateSector("Misc", "left")
 
@@ -61,6 +62,13 @@ testSection:AddButton(
     "Anti Lock",
     function()
           loadstring(game:HttpGet('https://raw.githubusercontent.com/wenny69420/KirbswareScripts/main/MobileV3'))()
+    end
+)
+
+testSection:AddButton(
+    "Rejoin[Only If the script bug]",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))();
     end
 )
       
